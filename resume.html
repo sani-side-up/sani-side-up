@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ihsan H. Tjahyono — CV</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#0d1b2a;--navy-mid:#152236;--navy-light:#1e3352;--gold:#c9a84c;--gold-light:#e2c97e;--cream:#f5f0e8;--cream-dim:#d9d0be;--slate:#8ba0b4;--white:#ffffff;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{background:var(--navy);color:var(--cream);font-family:'DM Sans',sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden;}
+    body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");pointer-events:none;z-index:0;}
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1.4rem 4rem;background:rgba(13,27,42,0.88);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,168,76,0.12);}
+    .nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;color:var(--gold);letter-spacing:0.04em;text-decoration:none;}
+    .nav-links{display:flex;gap:2.4rem;list-style:none;}
+    .nav-links a{color:var(--slate);text-decoration:none;font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;transition:color 0.2s;}
+    .nav-links a:hover,.nav-links a.active{color:var(--gold-light);}
+    .page-wrap{padding:8rem 4rem 5rem;min-height:100vh;}
+    .section-label{font-size:0.7rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:0.6rem;display:flex;align-items:center;gap:0.8rem;}
+    .section-label::before{content:'';width:28px;height:1px;background:var(--gold);}
+    h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,4rem);font-weight:300;color:var(--white);margin-bottom:1rem;}
+    h1 em{font-style:italic;color:var(--gold-light);}
+    .section-divider{width:100%;height:1px;background:linear-gradient(90deg,rgba(201,168,76,0.3) 0%,transparent 100%);margin-bottom:3rem;}
+    .resume-columns{display:grid;grid-template-columns:1fr 1fr;gap:4rem;}
+    .resume-section h3{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--gold-light);margin-bottom:1.5rem;padding-bottom:0.5rem;border-bottom:1px solid rgba(201,168,76,0.2);}
+    .resume-entry{margin-bottom:1.8rem;}
+    .resume-entry-title{font-size:0.9rem;font-weight:500;color:var(--cream);margin-bottom:0.15rem;}
+    .resume-entry-org{font-size:0.8rem;color:var(--gold);margin-bottom:0.15rem;}
+    .resume-entry-date{font-size:0.72rem;color:var(--slate);letter-spacing:0.05em;margin-bottom:0.4rem;}
+    .resume-entry-desc{font-size:0.82rem;color:var(--slate);line-height:1.65;}
+    .skills-wrap{display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:0.5rem;}
+    .skill-pill{font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0.8rem;border:1px solid rgba(201,168,76,0.25);color:var(--slate);}
+    .resume-download{margin-top:3rem;text-align:center;}
+    .btn-primary{background:var(--gold);color:var(--navy);padding:0.75rem 1.8rem;text-decoration:none;font-size:0.8rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;transition:background 0.2s,transform 0.2s;display:inline-block;}
+    .btn-primary:hover{background:var(--gold-light);transform:translateY(-1px);}
+    .reveal{opacity:0;transform:translateY(24px);transition:opacity 0.7s ease,transform 0.7s ease;}
+    .reveal.visible{opacity:1;transform:none;}
+    footer{background:var(--navy);padding:2rem 4rem;display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(255,255,255,0.05);}
+    footer p{font-size:0.72rem;color:var(--slate);letter-spacing:0.05em;}
+    @media(max-width:768px){nav{padding:1.2rem 1.5rem;}.nav-links{gap:1.2rem;}.page-wrap{padding:6rem 1.5rem 4rem;}.resume-columns{grid-template-columns:1fr;gap:2.5rem;}footer{flex-direction:column;gap:0.5rem;text-align:center;}}
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="nav-logo" href="/">Ihsan H. Tjahyono</a>
+    <ul class="nav-links">
+      <li><a href="/about">About</a></li>
+      <li><a href="/research">Research</a></li>
+      <li><a href="/writing">Writing</a></li>
+      <li><a href="/resume" class="active">CV</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <div class="section-label">Curriculum Vitae</div>
+    <h1>Experience & <em>Education</em></h1>
+    <div class="section-divider"></div>
+    <div class="resume-columns">
+      <div>
+        <div class="resume-section reveal">
+          <h3>Education</h3>
+          <div class="resume-entry">
+            <div class="resume-entry-title">A.A. International Studies</div>
+            <div class="resume-entry-org">Montgomery College</div>
+            <div class="resume-entry-date">2025 — 2027</div>
+            <div class="resume-entry-desc">Concentration in Political Ideologies. Pathway toward a B.A. in International Affairs and a career in Foreign Policy & Diplomacy.</div>
+          </div>
+        </div>
+        <div class="resume-section reveal">
+          <h3>Skills & Languages</h3>
+          <div class="resume-entry">
+            <div class="resume-entry-title">Languages</div>
+            <div class="skills-wrap">
+              <span class="skill-pill">English — Native</span>
+              <span class="skill-pill">Bahasa Indonesia — Native</span>
+              <span class="skill-pill">Turkish — Advanced</span>
+              <span class="skill-pill">Classical Arabic — Intermediate</span>
+            </div>
+          </div>
+          <div class="resume-entry">
+            <div class="resume-entry-title">Research & Analysis</div>
+            <div class="skills-wrap">
+              <span class="skill-pill">Policy Writing</span>
+              <span class="skill-pill">Qualitative Research</span>
+              <span class="skill-pill">Political Philosophy</span>
+              <span class="skill-pill">Geopolitical Analysis</span>
+              <span class="skill-pill">Open-Source Intelligence</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="resume-section reveal">
+          <h3>Activities & Involvement</h3>
+          <div class="resume-entry">
+            <div class="resume-entry-title">Model United Nations — Delegate</div>
+            <div class="resume-entry-org">Montgomery College MUN</div>
+            <div class="resume-entry-date">2025 — Present</div>
+            <div class="resume-entry-desc">Participating in committee simulations focused on international security, human rights, and multilateral diplomacy.</div>
+          </div>
+          <div class="resume-entry">
+            <div class="resume-entry-title">Independent Research & Writing</div>
+            <div class="resume-entry-org">Self-directed</div>
+            <div class="resume-entry-date">2026 — Present</div>
+            <div class="resume-entry-desc">Writing and publishing analysis on geopolitics, political philosophy, and U.S. foreign policy across a range of topics and regions.</div>
+          </div>
+        </div>
+        <div class="resume-section reveal">
+          <h3>Areas of Focus</h3>
+          <div class="skills-wrap" style="margin-top:0.5rem;">
+            <span class="skill-pill">U.S. Foreign Policy</span>
+            <span class="skill-pill">NATO & Alliances</span>
+            <span class="skill-pill">Islamic Political Thought</span>
+            <span class="skill-pill">Indo-Pacific Relations</span>
+            <span class="skill-pill">Non-Aligned Movement</span>
+            <span class="skill-pill">Political Philosophy</span>
+            <span class="skill-pill">Turkish-Kurdish Conflict</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="resume-download reveal">
+      <a href="/cv.pdf" class="btn-primary" download>Download Full CV (PDF)</a>
+    </div>
+  </div>
+  <footer>
+    <p>© 2026 Ihsan H. Tjahyono. All rights reserved.</p>
+    <p>International Studies · Political Ideologies · Montgomery College</p>
+  </footer>
+  <script>
+    const reveals=document.querySelectorAll('.reveal');
+    const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target);}}),{threshold:0.1});
+    reveals.forEach(el=>observer.observe(el));
+  </script>
+</body>
+</html>
