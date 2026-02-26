@@ -1,4 +1,8 @@
-## Hi there 👋
+# Ihsan Tjahyono — Personal Portfolio
+
+Personal website for Ihsan H. Tjahyono, International Studies student at Montgomery College.
+
+Live at: https://sani-side-up.github.io or https://ihsantjahyono.com
 
 <!--
 **sani-side-up/sani-side-up** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
