@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ihsan Tjahyono — Aspiring Political Analyst</title>
+  <title>Ihsan Tjahyono — Foreign Policy & Diplomacy</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
@@ -113,8 +114,34 @@
     .hero-content {
       position: relative;
       z-index: 1;
-      max-width: 700px;
+      max-width: 580px;
       animation: fadeUp 1s ease both;
+    }
+
+    .hero-photo {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 92vh;
+      max-height: 820px;
+      z-index: 1;
+      mix-blend-mode: lighten;
+      animation: photoFade 2.5s ease both;
+      pointer-events: none;
+      filter: drop-shadow(-20px 0px 40px rgba(201,168,76,0.08));
+    }
+
+    @keyframes photoFade {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      .hero-photo {
+        height: 50vh;
+        right: -5%;
+        opacity: 0.2;
+      }
     }
 
     .hero-eyebrow {
@@ -585,11 +612,12 @@
   <section id="hero">
     <div class="hero-bg"></div>
     <div class="hero-map-lines"></div>
+    <img src="profile.png" alt="Ihsan Tjahyono" class="hero-photo" />
     <div class="hero-content">
       <div class="hero-eyebrow">Foreign Policy & Diplomacy</div>
-      <h1>Ihsan <em>Habibie</em><br>Tjahyono</h1>
+      <h1>Your <em>Full</em><br>Name Here</h1>
       <p class="hero-bio">
-        International Studies student at Montgomery College, currently academically focused on the  multilateral diplomacy, U.S. foreign policy, and the geopolitics o. Aspiring to bridge academic insight with real-world policy impact.
+        International Affairs student at [Your University], focused on multilateral diplomacy, U.S. foreign policy, and the geopolitics of [Your Region of Interest]. Aspiring to bridge academic insight with real-world policy impact.
       </p>
       <div class="hero-cta">
         <a href="#research" class="btn-primary">View My Work</a>
@@ -606,17 +634,17 @@
 
     <div class="about-grid reveal">
       <div class="about-text">
-        <p>I'm a <strong>freshman at Montgomery College</strong> pursuing a A.A. in International Studies with a concentration in Political Ideologies. My academic work sits at the intersection of the political spectrum, and strategic studies, and international law.</p>
-        <p>I'm particularly interested in <strong>[your specific interest — e.g., U.S.-China relations, NATO dynamics, Middle East peace processes]</strong> and how multilateral institutions shape global order in an era of renewed great-power competition.</p>
-        <p>Outside the classroom, I serve as [e.g., Editor of the International Affairs Review / Model UN Chair / Policy Fellow at X]. I believe rigorous research and clear writing are the most powerful tools a diplomat can carry.</p>
+        <p>I'm a <strong>freshman at Montgomery College</strong> pursuing an A.A. in International Studies, in preparation for an International Affairs program and a pathway towards Foreign Policy & Diplomacy. My academic work sits at the intersection of political theory and the spectrum, philosophy, i.e., the theory of knowledge (epistemology), and the uprising of the Industrial Revolution.</p>
+        <p>I'm particularly interested in <strong>[ — e.g., U.S.-Türkiye relations, NATO dynamics, the Non-aligned Movement (NOM), Indo-China-U.S. relations, and Islamic studies]</strong> and how multilateral institutions shape global order in an era of renewed great-power competition.</p>
+        <p>Outside the classroom, I plan on serving as [e.g., Editor of the International Affairs Review, a part of Model UN Chair]. I believe rigorous research and clear writing are the most powerful tools a diplomat can carry.</p>
       </div>
       <div class="about-facts">
         <div class="fact-item">
-          <div class="fact-label">University</div>
-          <div class="fact-value">[Your University Name]</div>
+          <div class="fact-label">Institution</div>
+          <div class="fact-value">Montgomery College</div>
         </div>
         <div class="fact-item">
-          <div class="fact-label">Concentration</div>
+          <div class="fact-label">Planned Concentration</div>
           <div class="fact-value">Foreign Policy & Diplomacy</div>
         </div>
         <div class="fact-item">
@@ -625,11 +653,11 @@
         </div>
         <div class="fact-item">
           <div class="fact-label">Languages</div>
-          <div class="fact-value">English (Native) · Indonesian (Native) · Turkish (Advanced) · Classical Arabic (Intermediate)</div>
+          <div class="fact-value">English (Native) · Bahasa Indonesia (Native) · Turkish (Advanced) · Classical Arabic (Intermediate)</div>
         </div>
         <div class="fact-item">
           <div class="fact-label">Currently Reading</div>
-          <div class="fact-value">"The Worlds of Herman Kahn" — Sharon Ghamari-Tabrizi</div>
+          <div class="fact-value">"The Nicomachean Ethics" — Aristotle</div>
         </div>
       </div>
     </div>
@@ -734,8 +762,9 @@
             <div class="resume-entry-title">Languages</div>
             <div class="skills-wrap">
               <span class="skill-pill">English — Native</span>
-              <span class="skill-pill">French — Advanced</span>
-              <span class="skill-pill">Arabic — Intermediate</span>
+              <span class="skill-pill">Bahasa Indonesia — Native</span>
+              <span class="skill-pill">Turkish — Advanced</span>
+              <span class="skill-pill">Classical Arabic — Intermediate</span>
             </div>
           </div>
           <div class="resume-entry">
@@ -786,17 +815,11 @@
     <h2>Let's Connect</h2>
     <p class="contact-tagline">"Diplomacy is the art of letting someone else have your way." — Open to collaborations, opportunities, and conversations.</p>
 
-    <a href="mailto:yourname@email.com" class="contact-email">yourname@email.com</a>
+    <a href="/cdn-cgi/l/email-protection#1d6472686f737c70785d78707c7471337e7270" class="contact-email"><span class="__cf_email__" data-cfemail="760f19030418171b1336131b171f1a5815191b">[email&#160;protected]</span></a>
 
     <div class="contact-links" style="margin-top: 2.5rem;">
       <a href="https://linkedin.com/in/ihsantjahyono" class="contact-link" target="_blank">
         ↗ LinkedIn
-      </a>
-      <a href="https://twitter.com/yourhandle" class="contact-link" target="_blank">
-        ↗ Twitter / X
-      </a>
-      <a href="https://yoursubstack.substack.com" class="contact-link" target="_blank">
-        ↗ Substack
       </a>
       <a href="https://github.com/sani-side-up" class="contact-link" target="_blank">
         ↗ GitHub
@@ -806,23 +829,12 @@
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2026 Ihsan Tjahyono.</p>
+    <p>© 2026 Ihsan H. Tjahyono.</p>
     <p>International Affairs — Foreign Policy & Diplomacy</p>
   </footer>
 
   <!-- SCROLL REVEAL -->
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     const reveals = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          observer.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.1 });
-    reveals.forEach(el => observer.observe(el));
-  </script>
-
-</body>
-</html>
