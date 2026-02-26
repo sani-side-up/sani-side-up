@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ihsan Tjahyono — Foreign Policy & Diplomacy</title>
+  <title>Ihsan Tjahyono — International Studies & Diplomacy</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -21,7 +21,6 @@
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     html { scroll-behavior: smooth; }
 
     body {
@@ -33,7 +32,6 @@
       overflow-x: hidden;
     }
 
-    /* ─── NOISE OVERLAY ─── */
     body::before {
       content: '';
       position: fixed;
@@ -52,7 +50,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 1.4rem 4rem;
-      background: rgba(13, 27, 42, 0.85);
+      background: rgba(13, 27, 42, 0.88);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid rgba(201, 168, 76, 0.12);
     }
@@ -113,7 +111,7 @@
 
     .hero-content {
       position: relative;
-      z-index: 1;
+      z-index: 2;
       max-width: 580px;
       animation: fadeUp 1s ease both;
     }
@@ -134,14 +132,6 @@
     @keyframes photoFade {
       from { opacity: 0; }
       to { opacity: 1; }
-    }
-
-    @media (max-width: 768px) {
-      .hero-photo {
-        height: 50vh;
-        right: -5%;
-        opacity: 0.2;
-      }
     }
 
     .hero-eyebrow {
@@ -200,6 +190,7 @@
       letter-spacing: 0.1em;
       text-transform: uppercase;
       transition: background 0.2s, transform 0.2s;
+      display: inline-block;
     }
 
     .btn-primary:hover {
@@ -216,6 +207,7 @@
       letter-spacing: 0.1em;
       text-transform: uppercase;
       transition: border-color 0.2s, color 0.2s;
+      display: inline-block;
     }
 
     .btn-outline:hover {
@@ -263,9 +255,7 @@
     }
 
     /* ─── ABOUT ─── */
-    #about {
-      background: var(--navy-mid);
-    }
+    #about { background: var(--navy-mid); }
 
     .about-grid {
       display: grid;
@@ -390,7 +380,6 @@
       margin-top: 3rem;
       display: flex;
       flex-direction: column;
-      gap: 0;
     }
 
     .blog-item {
@@ -401,7 +390,6 @@
       padding: 1.8rem 0;
       border-bottom: 1px solid rgba(255,255,255,0.06);
       text-decoration: none;
-      transition: background 0.2s;
     }
 
     .blog-item:hover .blog-title { color: var(--gold-light); }
@@ -449,9 +437,7 @@
       border-bottom: 1px solid rgba(201,168,76,0.2);
     }
 
-    .resume-entry {
-      margin-bottom: 1.8rem;
-    }
+    .resume-entry { margin-bottom: 1.8rem; }
 
     .resume-entry-title {
       font-size: 0.9rem;
@@ -516,11 +502,23 @@
       font-weight: 300;
     }
 
+    .contact-email {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      color: var(--gold);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(201,168,76,0.3);
+      transition: border-color 0.2s;
+    }
+
+    .contact-email:hover { border-color: var(--gold); }
+
     .contact-links {
       display: flex;
       justify-content: center;
       gap: 1.5rem;
       flex-wrap: wrap;
+      margin-top: 2.5rem;
       margin-bottom: 3rem;
     }
 
@@ -536,17 +534,6 @@
     }
 
     .contact-link:hover { color: var(--gold-light); }
-
-    .contact-email {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.8rem;
-      color: var(--gold);
-      text-decoration: none;
-      border-bottom: 1px solid rgba(201,168,76,0.3);
-      transition: border-color 0.2s;
-    }
-
-    .contact-email:hover { border-color: var(--gold); }
 
     /* ─── FOOTER ─── */
     footer {
@@ -587,6 +574,7 @@
       .nav-links { gap: 1.2rem; }
       section { padding: 5rem 1.5rem; }
       #hero { padding: 0 1.5rem; }
+      .hero-photo { height: 50vh; right: -5%; opacity: 0.2; }
       .about-grid, .resume-columns { grid-template-columns: 1fr; gap: 2.5rem; }
       .blog-item { grid-template-columns: 1fr; gap: 0.3rem; }
       .blog-tag { display: none; }
@@ -598,7 +586,7 @@
 
   <!-- NAV -->
   <nav>
-    <a class="nav-logo" href="#">Your Name</a>
+    <a class="nav-logo" href="#">Ihsan Tjahyono</a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#research">Research</a></li>
@@ -614,10 +602,10 @@
     <div class="hero-map-lines"></div>
     <img src="profile.png" alt="Ihsan Tjahyono" class="hero-photo" />
     <div class="hero-content">
-      <div class="hero-eyebrow">Foreign Policy & Diplomacy</div>
-      <h1>Your <em>Full</em><br>Name Here</h1>
+      <div class="hero-eyebrow">International Studies · Political Ideologies</div>
+      <h1>Ihsan <em>H.</em><br>Tjahyono</h1>
       <p class="hero-bio">
-        International Affairs student at [Your University], focused on multilateral diplomacy, U.S. foreign policy, and the geopolitics of [Your Region of Interest]. Aspiring to bridge academic insight with real-world policy impact.
+        International Studies student at Montgomery College, pursuing a pathway in Foreign Policy & Diplomacy. Focused on geopolitical theory, multilateral institutions, and the ideological forces shaping our world order.
       </p>
       <div class="hero-cta">
         <a href="#research" class="btn-primary">View My Work</a>
@@ -634,9 +622,9 @@
 
     <div class="about-grid reveal">
       <div class="about-text">
-        <p>I'm a <strong>freshman at Montgomery College</strong> pursuing an A.A. in International Studies, in preparation for an International Affairs program and a pathway towards Foreign Policy & Diplomacy. My academic work sits at the intersection of political theory and the spectrum, philosophy, i.e., the theory of knowledge (epistemology), and the uprising of the Industrial Revolution.</p>
-        <p>I'm particularly interested in <strong>[ — e.g., U.S.-Türkiye relations, NATO dynamics, the Non-aligned Movement (NOM), Indo-China-U.S. relations, and Islamic studies]</strong> and how multilateral institutions shape global order in an era of renewed great-power competition.</p>
-        <p>Outside the classroom, I plan on serving as [e.g., Editor of the International Affairs Review, a part of Model UN Chair]. I believe rigorous research and clear writing are the most powerful tools a diplomat can carry.</p>
+        <p>I'm a <strong>freshman at Montgomery College</strong> pursuing an A.A. in International Studies with a concentration in Political Ideologies — a stepping stone toward a four-year program in International Affairs and a career in Foreign Policy & Diplomacy.</p>
+        <p>My academic interests sit at the intersection of <strong>political theory and spectrum, philosophy, i.e., the theory of knowledge (epistemology), and neo-geopolitical theory, rooted in the uprising of the Industrial Revolution.</strong>. I'm particularly drawn to U.S.-Türkiye relations, NATO alliance dynamics, the Non-Aligned Movement, Indo-China-U.S. competition, and Islamic political thought.</p>
+        <p>I strongly believe that one must find the root cause of any social and political issues to prevent further conflicts.</p>
       </div>
       <div class="about-facts">
         <div class="fact-item">
@@ -644,8 +632,12 @@
           <div class="fact-value">Montgomery College</div>
         </div>
         <div class="fact-item">
-          <div class="fact-label">Planned Concentration</div>
-          <div class="fact-value">Foreign Policy & Diplomacy</div>
+          <div class="fact-label">Degree</div>
+          <div class="fact-value">A.A. International Studies</div>
+        </div>
+        <div class="fact-item">
+          <div class="fact-label">Concentration</div>
+          <div class="fact-value">Political Ideologies</div>
         </div>
         <div class="fact-item">
           <div class="fact-label">Expected Graduation</div>
@@ -653,7 +645,7 @@
         </div>
         <div class="fact-item">
           <div class="fact-label">Languages</div>
-          <div class="fact-value">English (Native) · Bahasa Indonesia (Native) · Turkish (Advanced) · Classical Arabic (Intermediate)</div>
+          <div class="fact-value">English · Bahasa Indonesia · Turkish · Classical Arabic</div>
         </div>
         <div class="fact-item">
           <div class="fact-label">Currently Reading</div>
@@ -671,28 +663,28 @@
 
     <div class="research-grid">
       <div class="research-card reveal">
-        <div class="research-tag">Thesis · 2024</div>
-        <h3>The Erosion of Liberal Multilateralism in an Era of Strategic Competition</h3>
-        <p>An analysis of how rising great-power rivalry is reshaping international institutions — from the WTO to the UN Security Council — and what this means for U.S. foreign policy strategy.</p>
-        <a href="#" class="card-link">Read Abstract →</a>
+        <div class="research-tag">Essay · 2025</div>
+        <h3>Political Ideologies and the Architecture of Modern Diplomacy</h3>
+        <p>An exploration of how ideological frameworks — from liberal internationalism to realpolitik — shape the foreign policy decisions of major world powers in the current era.</p>
+        <a href="#" class="card-link">Read More →</a>
       </div>
-      <div class="research-card reveal" style="animation-delay: 0.1s">
-        <div class="research-tag">Policy Brief · 2023</div>
-        <h3>Rethinking Alliance Management: NATO at 75</h3>
-        <p>A policy brief examining burden-sharing disputes within NATO and proposing a framework for renewed transatlantic cohesion amid diverging threat perceptions.</p>
-        <a href="#" class="card-link">Read Brief →</a>
+      <div class="research-card reveal">
+        <div class="research-tag">Analysis · 2025</div>
+        <h3>U.S.-Türkiye Relations: Strategic Partner or Diverging Ally?</h3>
+        <p>An analysis of the evolving tensions and alignments within the U.S.-Türkiye relationship, examining NATO obligations, regional interests, and Ankara's shifting foreign policy orientation.</p>
+        <a href="#" class="card-link">Read More →</a>
       </div>
-      <div class="research-card reveal" style="animation-delay: 0.2s">
-        <div class="research-tag">Case Study · 2023</div>
-        <h3>Diplomatic Signaling in the Taiwan Strait: Words, Weapons, and Red Lines</h3>
-        <p>A case study on coercive diplomacy and escalation management between Washington and Beijing over Taiwan, drawing on deterrence theory and historical parallels.</p>
-        <a href="#" class="card-link">Read Paper →</a>
+      <div class="research-card reveal">
+        <div class="research-tag">Research Paper · 2025</div>
+        <h3>The Non-Aligned Movement in a Bipolar World: Relevance Revisited</h3>
+        <p>Revisiting the Non-Aligned Movement's founding principles and asking whether a new wave of strategic non-alignment is emerging among the Global South amid renewed great-power competition.</p>
+        <a href="#" class="card-link">Read More →</a>
       </div>
-      <div class="research-card reveal" style="animation-delay: 0.3s">
-        <div class="research-tag">Conference · 2024</div>
-        <h3>HNMUN — Delegate, Security Council</h3>
-        <p>Represented [Country] in the UN Security Council at Harvard's National Model United Nations, debating resolutions on [topic]. Awarded Outstanding Delegate.</p>
-        <a href="#" class="card-link">View Certificate →</a>
+      <div class="research-card reveal">
+        <div class="research-tag">Philosophy · 2025</div>
+        <h3>Epistemology and Foreign Policy Judgment: What Do Policymakers Actually Know?</h3>
+        <p>A philosophical inquiry into the nature of knowledge in international relations — examining how epistemic assumptions shape foreign policy decisions and their unintended consequences.</p>
+        <a href="#" class="card-link">Read More →</a>
       </div>
     </div>
   </section>
@@ -710,6 +702,11 @@
         <span class="blog-tag">Tech & Geopolitics</span>
       </a>
       <a href="#" class="blog-item reveal">
+        <span class="blog-date">Jan 2025</span>
+        <span class="blog-title">The Non-Aligned Movement at 65: Dead Ideology or Blueprint for the Global South?</span>
+        <span class="blog-tag">Multilateralism</span>
+      </a>
+      <a href="#" class="blog-item reveal">
         <span class="blog-date">Nov 2024</span>
         <span class="blog-title">The Sahel Crisis and the Limits of French Neocolonial Security Policy</span>
         <span class="blog-tag">Africa</span>
@@ -723,11 +720,6 @@
         <span class="blog-date">May 2024</span>
         <span class="blog-title">Strategic Ambiguity Is Dying. That's a Problem for Everyone.</span>
         <span class="blog-tag">Indo-Pacific</span>
-      </a>
-      <a href="#" class="blog-item reveal">
-        <span class="blog-date">Feb 2024</span>
-        <span class="blog-title">The United Nations at a Crossroads: Reforming the Security Council Veto</span>
-        <span class="blog-tag">International Law</span>
       </a>
     </div>
   </section>
@@ -743,16 +735,10 @@
         <div class="resume-section reveal">
           <h3>Education</h3>
           <div class="resume-entry">
-            <div class="resume-entry-title">B.A. International Affairs</div>
-            <div class="resume-entry-org">[Your University]</div>
-            <div class="resume-entry-date">2022 — Present · GPA: X.XX</div>
-            <div class="resume-entry-desc">Concentration in Foreign Policy & Diplomacy. Honors thesis on [topic]. Dean's List.</div>
-          </div>
-          <div class="resume-entry">
-            <div class="resume-entry-title">Study Abroad — [Program Name]</div>
-            <div class="resume-entry-org">[Institution], [City, Country]</div>
-            <div class="resume-entry-date">Spring 2024</div>
-            <div class="resume-entry-desc">Coursework in [e.g., EU governance, comparative politics, regional security].</div>
+            <div class="resume-entry-title">A.A. International Studies</div>
+            <div class="resume-entry-org">Montgomery College</div>
+            <div class="resume-entry-date">2025 — 2027</div>
+            <div class="resume-entry-desc">Concentration in Political Ideologies. Pathway toward a B.A. in International Affairs and a career in Foreign Policy & Diplomacy.</div>
           </div>
         </div>
 
@@ -772,8 +758,9 @@
             <div class="skills-wrap">
               <span class="skill-pill">Policy Writing</span>
               <span class="skill-pill">Qualitative Research</span>
+              <span class="skill-pill">Political Philosophy</span>
+              <span class="skill-pill">Geopolitical Analysis</span>
               <span class="skill-pill">Open-Source Intelligence</span>
-              <span class="skill-pill">Data Visualization</span>
             </div>
           </div>
         </div>
@@ -781,24 +768,30 @@
 
       <div>
         <div class="resume-section reveal">
-          <h3>Experience</h3>
+          <h3>Activities & Involvement</h3>
           <div class="resume-entry">
-            <div class="resume-entry-title">Research Intern</div>
-            <div class="resume-entry-org">[Think Tank / Government Office / NGO]</div>
-            <div class="resume-entry-date">Summer 2024</div>
-            <div class="resume-entry-desc">Produced research briefs on [topic] for senior policy staff. Contributed to a report on [specific project] presented to [audience].</div>
+            <div class="resume-entry-title">Model United Nations — Delegate</div>
+            <div class="resume-entry-org">Montgomery College MUN</div>
+            <div class="resume-entry-date">TBD</div>
+            <div class="resume-entry-desc">Participating in committee simulations focused on international security, human rights, and multilateral diplomacy.</div>
           </div>
           <div class="resume-entry">
-            <div class="resume-entry-title">Editor-in-Chief</div>
-            <div class="resume-entry-org">[Your University] International Affairs Review</div>
-            <div class="resume-entry-date">2023 — Present</div>
-            <div class="resume-entry-desc">Overseeing a student-run publication with 12 contributors. Commissioning, editing, and publishing peer-reviewed undergraduate research.</div>
+            <div class="resume-entry-title">Independent Research & Writing</div>
+            <div class="resume-entry-org">Self-directed</div>
+            <div class="resume-entry-date">2025 — Present</div>
+            <div class="resume-entry-desc">Writing and publishing analysis on geopolitics, political philosophy, and foreign policy across a range of topics and regions.</div>
           </div>
-          <div class="resume-entry">
-            <div class="resume-entry-title">Model UN — Secretary General</div>
-            <div class="resume-entry-org">[University] Model United Nations</div>
-            <div class="resume-entry-date">2023 — 2024</div>
-            <div class="resume-entry-desc">Led a 200-person conference. Managed committee directors, logistics, and opening ceremonies.</div>
+        </div>
+
+        <div class="resume-section reveal">
+          <h3>Areas of Focus</h3>
+          <div class="skills-wrap" style="margin-top: 0.5rem;">
+            <span class="skill-pill">U.S. Foreign Policy</span>
+            <span class="skill-pill">NATO & Alliances</span>
+            <span class="skill-pill">Islamic Political Thought</span>
+            <span class="skill-pill">Indo-Pacific Relations</span>
+            <span class="skill-pill">Non-Aligned Movement</span>
+            <span class="skill-pill">Political Philosophy</span>
           </div>
         </div>
       </div>
@@ -815,26 +808,32 @@
     <h2>Let's Connect</h2>
     <p class="contact-tagline">"Diplomacy is the art of letting someone else have your way." — Open to collaborations, opportunities, and conversations.</p>
 
-    <a href="/cdn-cgi/l/email-protection#1d6472686f737c70785d78707c7471337e7270" class="contact-email"><span class="__cf_email__" data-cfemail="760f19030418171b1336131b171f1a5815191b">[email&#160;protected]</span></a>
+    <a href="mailto:tjahyono_ihsan@outlook.com" class="contact-email">tjahyono_ihsan@outlook.com</a>
 
-    <div class="contact-links" style="margin-top: 2.5rem;">
-      <a href="https://linkedin.com/in/ihsantjahyono" class="contact-link" target="_blank">
-        ↗ LinkedIn
-      </a>
-      <a href="https://github.com/sani-side-up" class="contact-link" target="_blank">
-        ↗ GitHub
-      </a>
+    <div class="contact-links">
+      <a href="https://linkedin.com/in/ihsantjahyono" class="contact-link" target="_blank">↗ LinkedIn</a>
+      <a href="https://github.com/sani-side-up" class="contact-link" target="_blank">↗ GitHub</a>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2026 Ihsan H. Tjahyono.</p>
-    <p>International Affairs — Foreign Policy & Diplomacy</p>
+    <p>© 2026 Ihsan H. Tjahyono. All rights reserved.</p>
+    <p>International Studies · Political Ideologies · Montgomery College</p>
   </footer>
 
-  <!-- SCROLL REVEAL -->
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
     const reveals = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
